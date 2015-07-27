@@ -1,0 +1,10 @@
+<input ng-model='name' placeholder='Name of Friend'>
+<input ng-model='status' placeholder='He is .....'>
+<button ng-click='addFriend(name, status)'>submit</button>
+<input ng-model='filt' placeholder='Filter here'>
+<div style='margin: 30px;'>
+	<ul ng-repeat='friend in friends | filter: filt'>
+		<li>{{friend.name}} is {{friend.status}}</li>
+	</ul>
+	<img src="http://media4.giphy.com/media/Cpts9DRFGX3va/giphy.gif">
+</div>

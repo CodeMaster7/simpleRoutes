@@ -1,0 +1,11 @@
+<h2 align='center'>BULLIES</h2>
+<input ng-model='name' placeholder='Name of Bully'>
+<input ng-model='status' placeholder='He is .....'>
+<button ng-click='addBully(name, status)'>submit</button>
+<input ng-model='filt' placeholder='Filter here'>
+<ul ng-repeat='bully in bullies | filter: filt'>
+	<li>{{bully.name}} is {{bully.status}}</li>
+</ul>
+<img src="http://media.giphy.com/media/ksoD8RBuaDA8o/giphy-tumblr.gif">
+<img src="https://media2.giphy.com/media/Eq49yQGJL835K/200.gif">
+<img src="https://media3.giphy.com/media/Rt5SYFNtu09IQ/200.gif">

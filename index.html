@@ -1,0 +1,28 @@
+<html ng-app='mainApp'>
+<head>
+	<title>Simple Routes</title>
+</head>
+<body>
+	<h1 align='center'>This is going to be your main view that persists</h1>
+	<div align='right'>
+		<button><a href="#/">home</a></button>
+		<button><a href="#/friends">friends</a></button>
+		<button><a href="#/bullies">bullies</a></button>
+	</div>
+
+	<ng-view></ng-view>
+<!-- go ahead and link angular and angular-route right here -->
+	<script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js'></script>
+	<script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-route.js'></script>
+<!-- Now we link all of our files right here -->
+	<script type="text/javascript" src='js/app.js'></script>
+
+	<script type="text/javascript" src='js/bullies/bullyCtrl.js'></script>
+	<script type="text/javascript" src='js/bullies/bullyService.js'></script>
+	<script type="text/javascript" src='js/bullies/bullyTmpl.html'></script>
+
+	<script type="text/javascript" src='js/friends/friendCtrl.js'></script>
+	<script type="text/javascript" src='js/friends/friendService.js'></script>
+	<script type="text/javascript" src='js/friends/friendTmpl.html'></script>
+</body>
+</html>
